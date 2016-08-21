@@ -28,14 +28,14 @@ The following steps must still be performed manually:
                     <id>central</id>
                     <url>http://artifactory.redwyvern.com/artifactory/libs-release</url>
                     <snapshots>
-                        <enabled>true</enabled>
+                        <enabled>false</enabled>
                     </snapshots>
                 </repository>
                 <repository>
                     <id>snapshots</id>
                     <url>http://artifactory.redwyvern.com/artifactory/libs-snapshot</url>
                     <releases>
-                        <enabled>true</enabled>
+                        <enabled>false</enabled>
                     </releases>
                 </repository>
             </repositories>
@@ -44,14 +44,14 @@ The following steps must still be performed manually:
                     <id>central</id>
                     <url>http://artifactory.redwyvern.com/artifactory/plugins-release</url>
                     <snapshots>
-                        <enabled>true</enabled>
+                        <enabled>false</enabled>
                     </snapshots>
                 </pluginRepository>
                 <pluginRepository>
                     <id>snapshots</id>
                     <url>http://artifactory.redwyvern.com/artifactory/plugins-snapshot</url>
                     <releases>
-                        <enabled>true</enabled>
+                        <enabled>false</enabled>
                     </releases>
                 </pluginRepository>
             </pluginRepositories>
