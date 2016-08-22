@@ -1,3 +1,8 @@
+![](https://img.shields.io/docker/stars/redwyvern/jenkins.svg)
+![](https://img.shields.io/docker/pulls/redwyvern/jenkins.svg)
+![](https://img.shields.io/docker/automated/redwyvern/jenkins.svg)
+[![](https://images.microbadger.com/badges/image/redwyvern/jenkins.svg)](https://microbadger.com/images/redwyvern/jenkins "Get your own image badge on microbadger.com")
+
 Redwyvern Jenkins
 =================
 
