@@ -37,6 +37,7 @@ RUN mkdir /opt/jenkins && chown jenkins.jenkins /opt/jenkins
 
 USER jenkins 
 RUN /usr/local/bin/install-plugins.sh \
+    authorize-project:1.2.2 \
     ace-editor:1.1 \
     ansicolor:0.4.2 \
     ant:1.3 \
