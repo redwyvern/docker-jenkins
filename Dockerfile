@@ -1,6 +1,16 @@
 FROM jenkins:2.7.2
 MAINTAINER Nick Weedon <nick@weedon.org.au>
 
+# The timezone for the image (set to Etc/UTC for UTC)
+ARG IMAGE_TZ=America/New_York
+
+USER root
+RUN echo ${IMAGE_TZ} > /etc/timezone && dpkg-reconfigure -f noninteractive tzdata
+
+# Create the builds volume
+RUN mkdir -p /opt/jenkins/builds && chown -R jenkins.jenkins /opt/jenkins 
+VOLUME /opt/jenkins/builds
+
 USER jenkins 
 RUN /usr/local/bin/install-plugins.sh \
     authorize-project:1.2.2 \

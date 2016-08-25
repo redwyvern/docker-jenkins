@@ -21,6 +21,7 @@ The following steps must still be performed manually:
 9. Set git author and name (git config --global user.email "jenkins@weedon.org.au" and git config --global user.name "Jenkins")
 10. Set git to use new push behavior (git config --global push.default matching)
 11. Add jenkins id_rsa and id_rsa.pub to .ssh (needed for command line commits)
+12. Configure Jenkins to output builds to /opt/jenkins/builds (/opt/jenkins/builds/${ITEM\_FULL\_NAME})
 
 TODO:
 1. Split out jobs, builds and workspaces
