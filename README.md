@@ -22,6 +22,7 @@ The following steps must still be performed manually:
 10. Set git to use new push behavior (git config --global push.default matching)
 11. Add jenkins id_rsa and id_rsa.pub to .ssh (needed for command line commits)
 12. Configure Jenkins to output builds to /opt/jenkins/builds (/opt/jenkins/builds/${ITEM\_FULL\_NAME})
+13. Configure slaves and disable executors in master
 
 TODO:
 1. Split out jobs, builds and workspaces
