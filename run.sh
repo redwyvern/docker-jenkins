@@ -23,4 +23,5 @@ docker run --detach=true --name "${NAME}" --hostname "${HOST_NAME}" \
     --network=${NETWORK_NAME} \
     -p $WEB_PORT:8080 \
     -p $AGENT_PORT:50000 \
+    --env JAVA_OPTS='-Dfile.encoding=UTF8' \
     redwyvern/jenkins
