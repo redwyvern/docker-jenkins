@@ -28,3 +28,29 @@ TODO:
 1. Split out jobs, builds and workspaces
 2. Move git author and push behavior to image
 
+Example YAML file:
+```
+version: '3'
+
+services:
+  jenkins:
+    image: docker.artifactory.weedon.org.au/redwyvern/jenkins
+    container_name: jenkins
+    hostname: jenkins
+    ports:
+      - '8060:8080'
+      - '50000:50000'
+    volumes:
+      - /opt/docker-containers/jenkins:/var/jenkins_home
+      - /opt/builds:/opt/jenkins/builds
+    environment:
+    #  - EXTRA_JAVA_OPTIONS=-Xmx4g
+      - EXTRA_JAVA_OPTIONS=-Dfile.encoding=UTF8
+    restart: always
+    dns: 192.168.1.50
+    networks:
+      - dev_nw
+
+networks:
+  dev_nw:
+```
