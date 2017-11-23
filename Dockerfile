@@ -1,4 +1,4 @@
-FROM jenkins:2.60.3
+FROM jenkins/jenkins:lts
 MAINTAINER Nick Weedon <nick@weedon.org.au>
 
 # The timezone for the image (set to Etc/UTC for UTC)
