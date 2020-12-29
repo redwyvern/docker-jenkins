@@ -54,3 +54,13 @@ services:
 networks:
   dev_nw:
 ```
+
+To update the plugin list in the docker file you can easily generate a list of installed plugins by running going to {JENKINS_URL}/script and running:
+```
+Jenkins.instance.pluginManager.plugins.each{
+  plugin -> 
+    println ("${plugin.getShortName()}: ${plugin.getVersion()}")
+}
+```
+Remember to make a backup of your jenkins data folder before upgrading plugins.
+
