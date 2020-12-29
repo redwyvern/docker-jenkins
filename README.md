@@ -59,7 +59,7 @@ To update the plugin list in the docker file you can easily generate a list of i
 ```groovy
 Jenkins.instance.pluginManager.plugins.each{
   plugin -> 
-    println ("${plugin.getShortName()}:${plugin.getVersion()} \\")
+    println ("    ${plugin.getShortName()}:${plugin.getVersion()} \\")
 }
 ```
 Remember to make a backup of your jenkins data folder before upgrading plugins.
