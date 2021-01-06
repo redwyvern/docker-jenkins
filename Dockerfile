@@ -58,8 +58,10 @@ RUN /usr/local/bin/install-plugins.sh \
     plain-credentials:1.7 \
     branch-api:2.6.2 \
     subversion:2.13.2 \
+    blueocean-dashboard:1.24.3 \
     bootstrap4-api:4.5.3-1 \
     okhttp-api:3.14.9 \
+    blueocean-autofavorite:1.2.4 \
     jsch:0.1.55.2 \
     workflow-support:3.7 \
     next-build-number:1.6 \
@@ -67,27 +69,38 @@ RUN /usr/local/bin/install-plugins.sh \
     disk-usage:0.28 \
     warnings:4.63 \
     lockable-resources:2.10 \
+    blueocean-events:1.24.3 \
     envinject-api:1.7 \
     ivy:2.1 \
     pipeline-model-api:1.7.2 \
+    handy-uri-templates-2-api:2.1.8-1.0 \
     matrix-auth:2.6.4 \
     ws-cleanup:0.38 \
+    blueocean-github-pipeline:1.24.3 \
+    blueocean-bitbucket-pipeline:1.24.3 \
     ant:1.11 \
     plugin-util-api:1.6.1 \
     copyartifact:1.45.3 \
+    blueocean-i18n:1.24.3 \
+    jenkins-design-language:1.24.3 \
     sidebar-link:1.11.0 \
     scm-api:2.6.4 \
     ci-skip:0.0.2 \
     git:4.5.1 \
+    sse-gateway:1.24 \
     workflow-aggregator:2.6 \
     resource-disposer:0.14 \
     pipeline-stage-tags-metadata:1.7.2 \
+    blueocean:1.24.3 \
     github-branch-source:2.9.3 \
     git-client:3.6.0 \
     workflow-step-api:2.23 \
     pipeline-input-step:2.12 \
     pipeline-stage-view:2.19 \
+    blueocean-rest:1.24.3 \
     durable-task:1.35 \
+    ssh-agent:1.20 \
+    blueocean-personalization:1.24.3 \
     workflow-cps-global-lib:2.17 \
     pipeline-model-definition:1.7.2 \
     build-timeout:1.20 \
@@ -96,6 +109,8 @@ RUN /usr/local/bin/install-plugins.sh \
     workflow-durable-task-step:2.37 \
     jquery-detached:1.2.1 \
     deploy:1.16 \
+    blueocean-git-pipeline:1.24.3 \
+    mercurial:2.12 \
     authentication-tokens:1.4 \
     ace-editor:1.1 \
     jdk-tool:1.4 \
@@ -104,6 +119,7 @@ RUN /usr/local/bin/install-plugins.sh \
     cobertura:1.16 \
     workflow-cps:2.87 \
     pipeline-stage-step:2.5 \
+    blueocean-jira:1.24.3 \
     xunit:3.0.0 \
     git-server:1.9 \
     dtkit-api:3.0.0 \
@@ -113,11 +129,15 @@ RUN /usr/local/bin/install-plugins.sh \
     authorize-project:1.3.0 \
     snakeyaml-api:1.27.0 \
     pipeline-model-declarative-agent:1.1.1 \
+    jira:3.1.3 \
+    pubsub-light:1.13 \
     checks-api:1.2.0 \
     popper-api:1.16.0-7 \
     workflow-multibranch:2.22 \
     junit:1.48 \
     mailer:1.32.1 \
+    blueocean-web:1.24.3 \
+    blueocean-pipeline-scm-api:1.24.3 \
     run-condition:1.5 \
     github-pullrequest:0.2.8 \
     rebuild:1.31 \
@@ -125,6 +145,9 @@ RUN /usr/local/bin/install-plugins.sh \
     pipeline-github-lib:1.0 \
     mapdb-api:1.0.9.0 \
     ssh-credentials:1.18.1 \
+    blueocean-display-url:2.4.0 \
+    blueocean-pipeline-editor:1.24.3 \
+    favorite:2.3.2 \
     cppcheck:1.25 \
     config-file-provider:3.7.0 \
     token-macro:2.13 \
@@ -138,7 +161,7 @@ RUN /usr/local/bin/install-plugins.sh \
     github-api:1.117 \
     external-monitor-job:1.7 \
     momentjs:1.1.1 \
-    github-organization-folder:1.6 \
+    cloudbees-bitbucket-branch-source:2.9.6 \
     pipeline-model-extensions:1.7.2 \
     code-coverage-api:1.2.0 \
     workflow-job:2.40 \
@@ -146,11 +169,15 @@ RUN /usr/local/bin/install-plugins.sh \
     jaxb:2.3.0.1 \
     jacoco:3.1.0 \
     email-ext:2.80 \
+    blueocean-pipeline-api-impl:1.24.3 \
     postbuildscript:2.11.0 \
     workflow-api:2.40 \
     credentials-binding:1.24 \
     font-awesome-api:5.15.1-1 \
+    blueocean-rest-impl:1.24.3 \
     ruby-runtime:0.13 \
+    blueocean-jwt:1.24.3 \
+    blueocean-config:1.24.3 \
     artifactory:3.10.1 \
     pipeline-graph-analysis:1.10 \
     trilead-api:1.0.13 \
@@ -160,8 +187,11 @@ RUN /usr/local/bin/install-plugins.sh \
     command-launcher:1.5 \
     analysis-core:1.92 \
     docker-commons:1.17 \
+    variant:1.3 \
     pipeline-rest-api:2.19 \
+    blueocean-core-js:1.24.3 \
     timestamper:1.11.8 \
+    blueocean-commons:1.24.3 \
     nodejs:1.3.10 \
     script-security:1.75 \
     echarts-api:4.9.0-2 \
@@ -170,4 +200,5 @@ RUN /usr/local/bin/install-plugins.sh \
     github:1.32.0 \
     ssh-slaves:1.31.4 \
     apache-httpcomponents-client-4-api:4.5.10-2.0 \
+    ansible:1.1 \
     credentials:2.3.14
