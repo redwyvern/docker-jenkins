@@ -14,6 +14,7 @@ RUN apt-get clean && apt-get update && apt-get install -y --no-install-recommend
     tzdata \
     apt-transport-https \
     ca-certificates \
+    gnupg-agent \
     software-properties-common && \
     apt-get -q autoremove && \
     apt-get -q clean -y && rm -rf /var/lib/apt/lists/* && rm -f /var/cache/apt/*.bin
@@ -30,12 +31,12 @@ RUN locale-gen en_US.UTF-8 &&\
     sed -i 's|session    required     pam_loginuid.so|session    optional     pam_loginuid.so|g' /etc/pam.d/sshd &&\
     mkdir -p /var/run/sshd
 
-RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add - && \
+RUN curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add - && \
     add-apt-repository \
-       "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-       $(lsb_release -cs) \
-       stable"
-
+    "deb [arch=amd64] https://download.docker.com/linux/debian \
+    $(lsb_release -cs) \
+    stable"
+   
 RUN apt-get clean && apt-get update && apt-get install -y --no-install-recommends \
     docker-ce-cli && \
     apt-get -q autoremove && \
